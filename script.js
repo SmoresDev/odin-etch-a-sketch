@@ -1,8 +1,12 @@
 let boxesContainer = document.getElementById('sketch-boxes');
 
 function genBoxes () {
-    let numBoxes = prompt("How many boxes would you like to draw with?\nAny number between 4 and 100");
-    for (let i = 0; i < Number(numBoxes); i++){
+    while (boxesContainer.firesChild) {
+        boxesContainer.removeChild(boxesContainer.lastChild)
+    }
+    let numBoxes = prompt("How many boxes per side?\nAny number lower than 100");
+    boxesContainer.style.maxWidth = `${numBoxes*25}px`
+    for (let i = 0; i < (Number(numBoxes)*Number(numBoxes)); i++){
         let newBox = document.createElement('div');
         newBox.classList.add('box');
         boxesContainer.appendChild(newBox);

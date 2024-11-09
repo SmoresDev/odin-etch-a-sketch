@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 500px;
+    max-width: 1500px;
 }
 
 .box {
-    min-width: 48px;
-    min-height: 48px;
+    min-width: 23px;
+    min-height: 23px;
     border: solid 1px grey;
 }
 
@@ -21,5 +21,5 @@ h1 {
 
 .instructions {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: ;
 }
