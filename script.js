@@ -9,4 +9,14 @@ function genBoxes () {
     }
 }
 
+function colorBoxes (targetBox) {
+    if (targetBox.class = 'box') {
+        console.log(targetBox)
+        targetBox.target.style.backgroundColor = 'black';
+    }
+    
+}
+
 genBoxes()
+
+boxesContainer.addEventListener('mouseover', colorBoxes)
