@@ -1,0 +1,14 @@
+#sketch-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.box {
+    min-width: 48px;
+    min-height: 48px;
+    border: solid 1px grey;
+}
