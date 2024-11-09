@@ -11,6 +11,7 @@
     min-width: 23px;
     min-height: 23px;
     border: solid 1px grey;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 h1 {
