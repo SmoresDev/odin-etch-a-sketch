@@ -10,9 +10,11 @@ function genBoxes () {
 }
 
 function colorBoxes (targetBox) {
-    if (targetBox.class = 'box') {
+    if (targetBox.class = 'box' && targetBox.shiftKey == true) {
         console.log(targetBox)
         targetBox.target.style.backgroundColor = 'black';
+    } else if (targetBox.class = 'box' && targetBox.ctrlKey == true){
+        targetBox.target.style.backgroundColor = "white";
     }
     
 }
