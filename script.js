@@ -19,10 +19,13 @@ function genBoxes () {
 
 function colorBoxes (targetBox) {
     if (targetBox.class = 'box' && targetBox.shiftKey == true) {
-        console.log(targetBox)
-        targetBox.target.style.backgroundColor = 'black'
+        let darken = Number(targetBox.target.style.opacity)
+        if (darken < 1){
+        targetBox.target.style.opacity = (darken + .1) }
     } else if (targetBox.class = 'box' && targetBox.ctrlKey == true){
-        targetBox.target.style.backgroundColor = "white";
+        let lighten = Number(targetBox.target.style.opacity);
+        if (lighten > 0) {
+        targetBox.target.style.opacity = (lighten - .1) }
     }
     
 }
